@@ -1,0 +1,7 @@
+import { useEffect, useState } from 'react';
+export default function Header(){
+ const [open,setOpen]=useState(false); const [dark,setDark]=useState(()=>document.documentElement.dataset.theme==='dark');
+ useEffect(()=>{const media=matchMedia('(prefers-color-scheme: dark)');const change=e=>{try{if(localStorage.getItem('theme'))return;}catch{} setDark(e.matches);document.documentElement.dataset.theme=e.matches?'dark':'light';};media.addEventListener('change',change);return()=>media.removeEventListener('change',change);},[]);
+ function toggle(){const next=!dark;setDark(next);document.documentElement.dataset.theme=next?'dark':'light';try{localStorage.setItem('theme',next?'dark':'light');}catch{}}
+ return <header className="header"><div className="shell nav"><a className="brand" href="#top" aria-label="Vijay Krishna home">vk<span>.</span></a><nav aria-label="Main navigation" id="main-nav" className={open?'nav-links open':'nav-links'}>{[['services','Services'],['work','Work'],['about','About'],['contact',"Let’s talk"]].map(([id,label])=><a key={id} href={'#'+id} onClick={()=>setOpen(false)}>{label}</a>)}</nav><div className="nav-actions"><button className="theme" onClick={toggle} aria-label={dark?'Switch to light mode':'Switch to dark mode'} aria-pressed={dark}>{dark?'☀':'☾'}</button><button className="menu" aria-expanded={open} aria-controls="main-nav" onClick={()=>setOpen(!open)}>{open?'Close':'Menu'}</button></div></div></header>
+}

@@ -1,0 +1,2 @@
+import {owner} from '../data';
+export default function Footer(){return <footer className="shell footer"><a className="brand" href="#top" aria-label="Vijay Krishna home">vk<span>.</span></a><p>© {new Date().getFullYear()} {owner.name}</p><div><a href={owner.github} target="_blank" rel="noopener noreferrer">GitHub</a><a href={owner.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="#top">Back to top</a></div></footer>}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vijay-krishna-web.civildog8.chatgpt.site/sitemap.xml

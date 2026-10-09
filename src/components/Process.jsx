@@ -1,0 +1,2 @@
+import {process} from '../data';
+export default function Process(){return <section className="section shell" id="process"><div className="section-heading"><span className="eyebrow">03 / HOW I WORK</span><h2>Clear steps.<br/>No guesswork.</h2></div><ol className="process">{process.map(([title,body],i)=><li key={title}><span className="step-number">0{i+1}</span><h3>{title}</h3><p>{body}</p></li>)}</ol></section>}
