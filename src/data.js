@@ -1,4 +1,4 @@
-export const owner = { name: 'Vijay Krishna P J', email: 'vijaykrishnapj5@gmail.com', phone: '+91 89213 30633', whatsapp: 'https://wa.me/918921330633', github: 'https://github.com/vijaykrishnapj5-source', linkedin: 'https://www.linkedin.com/in/vijay-krishna-p-j-5a3a68258', photo: '/vijay.png', resume: 'resume.pdf' };
+export const owner = { name: 'Vijay Krishna P J', email: 'vijaykrishnapj5@gmail.com', phone: '+91 89213 30633', whatsapp: 'https://wa.me/918921330633', github: 'https://github.com/vijaykrishnapj5-source', linkedin: 'https://www.linkedin.com/in/vijay-krishna-p-j-5a3a68258', photo: '/vijay.PNG', resume: 'resume.pdf' };
 export const services = [
  {title:'Business & Landing Page Websites', short:'A clear first impression. A simpler next step.', description:'Responsive websites that explain what you do and make it easy for customers to get in touch.', tag:'For shops, clinics & growing businesses'},
  {title:'Custom Web Apps', short:'Less manual work. More room to grow.', description:'Inventory tools, booking workflows and dashboards built around the way your business works.', tag:'For everyday business operations'},
